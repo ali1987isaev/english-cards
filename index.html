@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>English</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="slider">
+      <section class="slider-wrapper">
+        <div class="heading" data-heading></div>
+        <button class="slide-arrow arrow-prev" data-slide-arrow-prev>&#8249;</button>
+        <button class="slide-arrow arrow-next" data-slide-arrow-next>&#8250;</button>
+        <ul class="slides-container" id="slides-container" data-cards-container></ul>
+        <h3 class="slider-counter" data-slider-counter></h3>
+      </section>
+    </div>
+    <div class="panel">
+      <div class="topic">
+        <button type="button" class="btn btn--secondary" data-all-works>words</button>
+        <button type="button" class="btn btn--secondary" data-all-expressions>expressions</button>
+      </div>
+
+      <form data-add-form>
+        <label for="english" hidden></label>
+        <input id="english" type="text" data-input-en placeholder="English">
+        <label for="russian" hidden></label>
+        <input id="russian" type="text" data-input-ru placeholder="Russian">
+        <input class="btn btn--add" type="submit" value="" data-input-add>
+      </form>
+
+      <div class="banner">
+        <button type="button" class="reverse" data-reverse>turn over the cards</button>
+        <div class="language" data-language></div>
+      </div>
+
+      <div class="number" data-number-container>
+        <div class="number__ouput" data-number-output>?</div>
+        <buttton class="number__button" type="button" data-render-number>Get number</buttton>
+        <button class="number__voice" type="button" data-number-voice>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+          </svg>
+        </button>
+      </div>
+
+      <textarea class="exercise-area" name="" id="" cols="30" rows="10"></textarea>
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
